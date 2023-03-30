@@ -10,9 +10,8 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
-    <head />
-    <body className={'${montserrat.className} m-32'}>{children}</body>
-    </html>
+       <head />
+       <body className={'${montserrat.className} m-32'}><div>{children}</div></body>
+     </html>
   )
 }
