@@ -1,6 +1,6 @@
 import './globals.css'
 import { Montserrat } from "@next/font/google"
-import searchBox from "@/components/searchBox";
+import SearchBox from "@/components/SearchBox";
 
 const montserrat = Montserrat({
   weight: ["400"],
@@ -14,9 +14,11 @@ export default function RootLayout({ children }) {
        <head />
        <body className={'${montserrat.className} m-32'}>
         <div>
-          {/* searchBox */}
+          {/* SearchBox */}
 
-          <searchBox />
+          <SearchBox />
+        </div>
+        <div>
           {children}
         </div>
         </body>
